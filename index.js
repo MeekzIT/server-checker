@@ -16,7 +16,6 @@ async function checkAPIs() {
         console.log('Response from https://hard.jsxmachines.com/api/v1/devices:', response2.status);
 
         if (response1.status === 200 && response2.status === 200) {
-            bot.sendMessage(chatId, 'Both API calls were successful.');
         } else {
             throw new Error('One or both API calls failed.');
         }
